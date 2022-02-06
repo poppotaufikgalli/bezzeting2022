@@ -31,7 +31,7 @@ $routes->setAutoRoute(false);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Bazzeting::index');
+$routes->get('/', 'Bazzeting::index'['filter' => 'auth']);
 $routes->get('/logout', 'Bazzeting::logout');
 $routes->get('/login', 'Bazzeting::login');
 $routes->post('/auth', 'Bazzeting::auth');
