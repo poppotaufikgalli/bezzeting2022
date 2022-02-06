@@ -1,0 +1,10 @@
+#abaikan file ini
+.env
+app/Views/pages/x*
+app/Views/templates/x*
+public/asset/.*
+public/asset/*.html
+public/asset/*.js
+public/asset/*.md
+public/asset/*.json
+public/asset/*.txt
