@@ -1,0 +1,510 @@
+CRITICAL - 2022-02-04 07:34:40 --> Undefined property: App\Controllers\Bazzeting::$load
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/muhammad...', 11)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 07:35:34 --> Undefined property: App\Controllers\Bazzeting::$load
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/muhammad...', 11)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 07:42:19 --> Undefined property: App\Controllers\Bazzeting::$load
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/muhammad...', 11)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 07:42:30 --> Call to a member function getNews() on null
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(11): App\Controllers\Bazzeting->view('index')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 07:42:31 --> Call to a member function getNews() on null
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(11): App\Controllers\Bazzeting->view('index')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-04 07:44:18 --> Undefined variable $data
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/muhammad...', 26)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(11): App\Controllers\Bazzeting->view('index')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-04 07:45:21 --> Invalid file: templates/header.php
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/heade...')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(23): view('templates/heade...', Array)
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(11): App\Controllers\Bazzeting->view('index')
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-04 07:45:22 --> Invalid file: templates/header.php
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/heade...')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(23): view('templates/heade...', Array)
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(11): App\Controllers\Bazzeting->view('index')
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-04 07:48:01 --> Invalid file: templates/header.php
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/heade...')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(23): view('templates/heade...', Array)
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(11): App\Controllers\Bazzeting->view('index')
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-04 07:48:10 --> Invalid file: templates/header.php
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/heade...')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(23): view('templates/heade...', Array)
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(11): App\Controllers\Bazzeting->view('index')
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-04 08:41:43 --> Invalid file: templates/sidebar.php
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/sideb...')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('templates/sideb...', Array, true)
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(38): view('templates/sideb...')
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(26): App\Controllers\Bazzeting->sidebar()
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(16): App\Controllers\Bazzeting->view('content')
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->content()
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#10 {main}
+CRITICAL - 2022-02-04 08:41:55 --> Invalid file: templates/sidebar.php
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/sideb...')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('templates/sideb...', Array, true)
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(38): view('templates/sideb...')
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(26): App\Controllers\Bazzeting->sidebar()
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(16): App\Controllers\Bazzeting->view('content')
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->content()
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#10 {main}
+CRITICAL - 2022-02-04 09:06:02 --> Undefined variable $request
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/muhammad...', 31)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->auth()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+CRITICAL - 2022-02-04 09:08:01 --> Call to undefined method App\Controllers\Bazzeting::redirect()
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->auth()
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#5 {main}
+CRITICAL - 2022-02-04 09:41:49 --> Call to a member function getOPD() on null
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi()
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#5 {main}
+ERROR - 2022-02-04 09:42:50 --> No database selected
+CRITICAL - 2022-02-04 09:42:50 --> No database selected
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Models/BazzetingModel.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(53): App\Models\BazzetingModel->getOPD()
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi()
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#11 {main}
+ERROR - 2022-02-04 09:43:55 --> Table 'simpegtpinang.v_refunkerja' doesn't exist
+CRITICAL - 2022-02-04 09:43:55 --> Table 'simpegtpinang.v_refunkerja' doesn't exist
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Models/BazzetingModel.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(53): App\Models\BazzetingModel->getOPD()
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi()
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#11 {main}
+CRITICAL - 2022-02-04 10:14:36 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(53): App\Models\BazzetingModel->getOPD()
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+CRITICAL - 2022-02-04 10:29:50 --> Cannot access offset of type string on string
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(29): App\Controllers\Bazzeting->view('content')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->content()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+CRITICAL - 2022-02-04 10:29:59 --> Cannot access offset of type string on string
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(29): App\Controllers\Bazzeting->view('content')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->content()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+CRITICAL - 2022-02-04 10:30:13 --> Cannot access offset of type string on string
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(29): App\Controllers\Bazzeting->view('content')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->content()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+ERROR - 2022-02-04 10:34:57 --> Table 'simpegtpinang.v_refunitker' doesn't exist
+CRITICAL - 2022-02-04 10:34:57 --> Table 'simpegtpinang.v_refunitker' doesn't exist
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1588): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Models/BazzetingModel.php(14): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(56): App\Models\BazzetingModel->getOPD('7204000000')
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi('7204000000')
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#11 {main}
+ERROR - 2022-02-04 10:48:48 --> Unknown column 'kdkomp' in 'where clause'
+CRITICAL - 2022-02-04 10:48:48 --> Unknown column 'kdkomp' in 'where clause'
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1588): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Models/BazzetingModel.php(14): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(56): App\Models\BazzetingModel->getOPD('7225')
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi('7225')
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#11 {main}
+CRITICAL - 2022-02-04 10:59:43 --> Undefined variable $offset
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Views/pages/formasi.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/muhammad...', 77)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/muhammad...')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('pages/formasi', Array, true)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(77): view('pages/formasi', Array)
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(60): App\Controllers\Bazzeting->view('formasi', Array)
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi('7201')
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#11 {main}
+ERROR - 2022-02-04 11:03:41 --> Unknown column 'kode1' in 'where clause'
+CRITICAL - 2022-02-04 11:03:41 --> Unknown column 'kode1' in 'where clause'
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1588): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Models/BazzetingModel.php(14): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(56): App\Models\BazzetingModel->getOPD('7201')
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi('7201')
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#11 {main}
+CRITICAL - 2022-02-04 11:04:03 --> Undefined property: stdClass::$levelunker
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Views/pages/formasi.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/muhammad...', 89)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/muhammad...')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('pages/formasi', Array, true)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(77): view('pages/formasi', Array)
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(60): App\Controllers\Bazzeting->view('formasi', Array)
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi('7201')
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#11 {main}
+CRITICAL - 2022-02-04 11:06:40 --> Undefined property: stdClass::$kdkomp
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Views/pages/formasi.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/muhammad...', 38)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/muhammad...')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('pages/formasi', Array, true)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(77): view('pages/formasi', Array)
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(60): App\Controllers\Bazzeting->view('formasi', Array)
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi('7201')
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#11 {main}
+CRITICAL - 2022-02-04 11:07:31 --> Undefined property: stdClass::$kunker
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Views/pages/formasi.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/muhammad...', 115)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/muhammad...')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('pages/formasi', Array, true)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(77): view('pages/formasi', Array)
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(60): App\Controllers\Bazzeting->view('formasi', Array)
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi('7201')
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#11 {main}
+CRITICAL - 2022-02-04 11:08:03 --> Undefined property: stdClass::$kunker
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Views/pages/formasi.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/muhammad...', 115)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/muhammad...')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('pages/formasi', Array, true)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(77): view('pages/formasi', Array)
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(60): App\Controllers\Bazzeting->view('formasi', Array)
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi('7201')
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#11 {main}
+CRITICAL - 2022-02-04 11:08:43 --> Undefined property: stdClass::$kunker
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Views/pages/formasi.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/muhammad...', 115)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/muhammad...')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('pages/formasi', Array, true)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(77): view('pages/formasi', Array)
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(60): App\Controllers\Bazzeting->view('formasi', Array)
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi('7201')
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#11 {main}
+CRITICAL - 2022-02-04 11:08:48 --> Undefined property: stdClass::$kunker
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Views/pages/formasi.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/muhammad...', 115)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/muhammad...')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('pages/formasi', Array, true)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(77): view('pages/formasi', Array)
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(60): App\Controllers\Bazzeting->view('formasi', Array)
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi('7201')
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#11 {main}
+CRITICAL - 2022-02-04 11:08:56 --> Undefined property: stdClass::$kunker
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Views/pages/formasi.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Users/muhammad...', 115)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/muhammad...')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('pages/formasi', Array, true)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(77): view('pages/formasi', Array)
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(60): App\Controllers\Bazzeting->view('formasi', Array)
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi('7201')
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#11 {main}
+CRITICAL - 2022-02-04 11:45:52 --> syntax error, unexpected token "}"
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('pages/formasi', Array, true)
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(77): view('pages/formasi', Array)
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(60): App\Controllers\Bazzeting->view('formasi', Array)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi('7201')
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#9 {main}
+ERROR - 2022-02-04 12:32:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*) as jml from v_peglist a join ref_jabfung b on (a.kjab = b.kjab) where conc...' at line 1
+CRITICAL - 2022-02-04 12:32:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*) as jml from v_peglist a join ref_jabfung b on (a.kjab = b.kjab) where conc...' at line 1
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('select b.njab, ...', 0)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select b.njab, ...')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select b.njab, ...')
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Models/BazzetingModel.php(26): CodeIgniter\Database\BaseConnection->query('select b.njab, ...', '7211')
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(57): App\Models\BazzetingModel->getJabfung('7211')
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi('7211')
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#10 {main}
+ERROR - 2022-02-04 12:32:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*) as jml from v_peglist a join ref_jabfung b on (a.kjab = b.kjab) where conc...' at line 1
+CRITICAL - 2022-02-04 12:32:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*) as jml from v_peglist a join ref_jabfung b on (a.kjab = b.kjab) where conc...' at line 1
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('select a.kjab, ...', 0)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('select a.kjab, ...')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('select a.kjab, ...')
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Models/BazzetingModel.php(26): CodeIgniter\Database\BaseConnection->query('select a.kjab, ...', '7211')
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(57): App\Models\BazzetingModel->getJabfung('7211')
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi('7211')
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#10 {main}
+CRITICAL - 2022-02-04 22:05:47 --> Undefined variable $selnunker
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Views/pages/formasi.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/muhammad...', 33)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/muhammad...')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('pages/formasi', Array, true)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(78): view('pages/formasi', Array)
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(61): App\Controllers\Bazzeting->view('formasi', Array)
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi('7217')
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#11 {main}
+CRITICAL - 2022-02-04 22:09:16 --> Cannot access offset of type string on string
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(19): App\Controllers\Bazzeting->view('index')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+CRITICAL - 2022-02-04 22:09:21 --> Cannot access offset of type string on string
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(19): App\Controllers\Bazzeting->view('index')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+CRITICAL - 2022-02-04 22:09:22 --> Cannot access offset of type string on string
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(19): App\Controllers\Bazzeting->view('index')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+CRITICAL - 2022-02-04 22:09:25 --> Cannot access offset of type string on string
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(19): App\Controllers\Bazzeting->view('index')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+CRITICAL - 2022-02-04 22:09:39 --> Cannot access offset of type string on string
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(19): App\Controllers\Bazzeting->view('index')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+CRITICAL - 2022-02-04 22:09:42 --> Undefined variable $selnunker
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Views/pages/formasi.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/muhammad...', 33)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(210): include('/Users/muhammad...')
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Common.php(1089): CodeIgniter\View\View->render('pages/formasi', Array, true)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(79): view('pages/formasi', Array)
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(62): App\Controllers\Bazzeting->view('formasi', Array)
+#6 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->formasi()
+#7 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#8 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#11 {main}
+CRITICAL - 2022-02-04 22:10:14 --> Cannot access offset of type string on string
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(19): App\Controllers\Bazzeting->view('index')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+CRITICAL - 2022-02-04 22:10:36 --> Cannot access offset of type string on string
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(19): App\Controllers\Bazzeting->view('index')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+CRITICAL - 2022-02-04 22:10:55 --> Cannot access offset of type string on string
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(19): App\Controllers\Bazzeting->view('index')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+CRITICAL - 2022-02-04 22:11:03 --> Cannot access offset of type string on string
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(19): App\Controllers\Bazzeting->view('index')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+CRITICAL - 2022-02-04 22:11:04 --> Cannot access offset of type string on string
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(19): App\Controllers\Bazzeting->view('index')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+CRITICAL - 2022-02-04 22:11:56 --> Cannot access offset of type string on string
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(19): App\Controllers\Bazzeting->view('index')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+CRITICAL - 2022-02-04 22:11:56 --> Cannot access offset of type string on string
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(19): App\Controllers\Bazzeting->view('index')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->index()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+CRITICAL - 2022-02-04 22:12:08 --> Cannot access offset of type string on string
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(29): App\Controllers\Bazzeting->view('content')
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->content()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
+CRITICAL - 2022-02-04 23:52:42 --> Undefined variable $request
+#0 /Users/muhammadtaufikhidayat/Sites/bazzeting/app/Controllers/Bazzeting.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Users/muhammad...', 101)
+#1 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(825): App\Controllers\Bazzeting->sfungsional()
+#2 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bazzeting))
+#3 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/muhammadtaufikhidayat/Sites/bazzeting/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/muhammadtaufikhidayat/Sites/bazzeting/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Users/muhammad...')
+#6 {main}
