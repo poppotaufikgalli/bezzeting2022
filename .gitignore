@@ -1,5 +1,6 @@
 #abaikan file ini
 .env
+.DS_Store
 app/Views/pages/x*
 app/Views/templates/x*
 public/asset/.*
@@ -8,3 +9,4 @@ public/asset/*.js
 public/asset/*.md
 public/asset/*.json
 public/asset/*.txt
+writable/*
