@@ -15,6 +15,7 @@ class Bazzeting extends BaseController
         echo "<pre>";
         print_r($data);
         echo "</pre>";
+        exit();
     }
 
     public function index()
@@ -62,30 +63,41 @@ class Bazzeting extends BaseController
             $data['sellspns'] = $this->getButuhAdaFungsional($selkdkomp);
             $data['selopd'] = $model->getOPD($selkdkomp);
             $data['selnunker'] = count($data['selopd']) > 0 ? $data['selopd'][0]->nunker : "";
-            $data['lsjabfung'] = $model->getJabfung();
+            $data['lsjabfung'] = [
+                "tertentu" =>  $model->getJabfung(null, 2),
+                "umum" =>  $model->getJabfung(null, 4),
+            ];
+            $data['lspnsfung'] = [
+                "tertentu" =>  $this->getlsPNSfung(2, $selkdkomp),
+                "umum" =>  $this->getlsPNSfung(4, $selkdkomp),
+            ];
         }
         
         //$this->printData($data);
         $this->view('formasi', $data);
     }
 
-    public function pejabat($kjab=null, $kdkomp=null)
+    public function pejabat($kjab=null, $jenisjab=2, $kdkomp=null)
     {
         $model = model(BazzetingModel::class);
-        $data['lsjabfung'] = $model->getJabfung();
+        $data['lsjabfung'] = [
+            "tertentu" =>  $model->getJabfung(null, 2),
+            "umum" =>  $model->getJabfung(null, 4),
+        ];
 
         $data['selkjab'] = $kjab;
+        $data['jenisjab'] = $jenisjab;
 
         if($kjab != null){
             if($kdkomp != null){
-                $data['lspns'] = $model->getPNSfung($kjab, $kdkomp);
+                $data['lspns'] = $model->getPNSfung($kjab, $jenisjab, $kdkomp);
                 $data['seljabfung'] = count($data['lspns']) > 0 ? $data['lspns'][0]->njabfung : "";
             }else{
-                $data['lspns'] = $model->getPNSfung($kjab);
+                $data['lspns'] = $model->getPNSfung($kjab, $jenisjab);
                 $data['seljabfung'] = count($data['lspns']) > 0 ? $data['lspns'][0]->njabfung : "";
             }
         }
-
+        //$this->printData($data);
         $this->view('pejabat', $data);
     }
 
@@ -101,6 +113,10 @@ class Bazzeting extends BaseController
         $model = model(BazzetingModel::class);
         $data = $model->getOPD($kdkomp);
         $data1 = $this->getRefBazzetingFungsional($kdkomp);
+        $data2 = [
+            "tertentu" =>  $this->getlsPNSfung(2, $kdkomp),
+            "umum" =>  $this->getlsPNSfung(4, $kdkomp),
+        ];
 
         //$this->printData($data1);
 
@@ -108,30 +124,30 @@ class Bazzeting extends BaseController
         // tulis header/nama kolom 
         $spreadsheet->getActiveSheet()
             ->setCellValue('A1', '('.$kdkomp.') - BAZZETING '. $data[0]->nunker);
-        $spreadsheet->getActiveSheet()->getStyle('A1:E1')
+        $spreadsheet->getActiveSheet()->getStyle('A1:F1')
             ->getFont()->setSize(12)->setBold(true);
-        $spreadsheet->getActiveSheet()->getStyle('A1:D1')
+        $spreadsheet->getActiveSheet()->getStyle('A1:E1')
             ->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
-        $spreadsheet->getActiveSheet()->getStyle('E')
+        $spreadsheet->getActiveSheet()->getStyle('F')
             ->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
 
-        $spreadsheet->getActiveSheet()->mergeCells('A1:E1');
+        $spreadsheet->getActiveSheet()->mergeCells('A1:F1');
 
         $spreadsheet->getActiveSheet()
             ->setCellValue('A3', 'STRUKTUR / JABATAN')
-            ->setCellValue('E3', 'JUMLAH');
+            ->setCellValue('F3', 'JUMLAH');
 
-        $spreadsheet->getActiveSheet()->getStyle('A3:E3')
+        $spreadsheet->getActiveSheet()->getStyle('A3:F3')
             ->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
 
-        $spreadsheet->getActiveSheet()->mergeCells('A3:D3');
-        $spreadsheet->getActiveSheet()->getStyle('A3:E3')
+        $spreadsheet->getActiveSheet()->mergeCells('A3:E3');
+        $spreadsheet->getActiveSheet()->getStyle('A3:F3')
             ->getFont()->getColor()->setARGB(\PhpOffice\PhpSpreadsheet\Style\Color::COLOR_WHITE);
-        $spreadsheet->getActiveSheet()->getStyle('A3:E3')
+        $spreadsheet->getActiveSheet()->getStyle('A3:F3')
             ->getFill()->setFillType(\PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID)->getStartColor()->setARGB('FF000000');
         
         $column = 4;
-        $colIdx = ['A','B', 'C', 'D'];
+        $colIdx = ['A','B', 'C', 'D', 'E', 'F'];
         $maxLevel = 0;
         $jmlfung = 0;
         // tulis data mobil ke cell
@@ -140,46 +156,78 @@ class Bazzeting extends BaseController
             $kunker = $value->kunker;
             $spreadsheet->getActiveSheet()
                 ->setCellValue($colIdx[$col] . $column, $value->nunker)
-                ->setCellValue('E' . $column, "");
+                ->setCellValue('F' . $column, "");
             $column++;
             if($maxLevel < $value->levelunker){
-                $maxLevel = $value->levelunker;
+                $maxLevel = $value->levelunker+1;
             }
             if(isset($data1[$kunker]) && count($data1[$kunker])> 0){
                 $dt = $data1[$kunker];
                 foreach ($dt as $key1 => $value1) {
+                    if($value1->jenisjab == 2){
+                        $ajenisjab = " (JFT)";
+                        $swarna = "FFFFEEE5";
+                        $nwarna = "FFFFD6C1";
+                        $jenisjab = "tertentu";
+                    }else{
+                        $ajenisjab = " (JFU)";
+                        $swarna = "FFDBFFE3";
+                        $nwarna = "FFACFFBE";
+                        $jenisjab = "umum";
+                    }
+
+                    //$ajenisjab = $value1->jenisjab == 2 ? " (JFT)" : " (JFU)";
                     $spreadsheet->getActiveSheet()
-                        ->setCellValue($colIdx[($col +1)] . $column, $value1->jabfung)
-                        ->setCellValue('E' . $column, $value1->jml)
+                        ->setCellValue($colIdx[($col +1)] . $column, $value1->jabfung . $ajenisjab)
+                        ->setCellValue('F' . $column, $value1->jml)
                         ->getStyle($colIdx[($col +1)] . $column)
                             ->getFont()->setItalic(true);
-                    $spreadsheet->getActiveSheet()->getStyle($colIdx[($col +1)] . $column.':D'.$column)
+                    $spreadsheet->getActiveSheet()->getStyle($colIdx[($col +1)] . $column.':F'.$column)
                             ->getFill()
                                 ->setFillType(\PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID)
-                                ->getStartColor()->setARGB('FFD3D3D3');
+                                ->getStartColor()->setARGB($nwarna);
                     $jmlfung = $jmlfung + $value1->jml;
                     $column++;
+
+                    //list orang
+
+                    $kjabfung = $value1->kjabfung;
+                    if(isset($data2[$jenisjab][$kunker][$kjabfung]) && count($data2[$jenisjab][$kunker][$kjabfung]) > 0){
+                        $lspns = $data2[$jenisjab][$kunker][$kjabfung];
+                        foreach ($lspns as $key2 => $value2) {
+                            $spreadsheet->getActiveSheet()
+                                ->setCellValue($colIdx[($col +1)] . $column, $value2->namapeg)
+                                ->getStyle($colIdx[($col +1)] . $column)
+                                    ->getFont()->setItalic(false);
+                            $spreadsheet->getActiveSheet()->getStyle($colIdx[($col +1)] . $column.':F'.$column)
+                                    ->getFill()
+                                        ->setFillType(\PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID)
+                                        ->getStartColor()->setARGB($swarna);
+                            $column++;
+                        }
+                    }
                 }
             }
         }
 
         $spreadsheet->getActiveSheet()
                 ->setCellValue('A'. $column, "TOTAL")
-                ->setCellValue('E' . $column, $jmlfung);
-        $spreadsheet->getActiveSheet()->mergeCells('A'.$column.':D'.$column);
-        $spreadsheet->getActiveSheet()->getStyle('A'.$column.':D'.$column)
+                ->setCellValue('F' . $column, $jmlfung);
+        $spreadsheet->getActiveSheet()->mergeCells('A'.$column.':E'.$column);
+        $spreadsheet->getActiveSheet()->getStyle('A'.$column.':E'.$column)
                     ->getAlignment()->setHorizontal(\PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER);
-        $spreadsheet->getActiveSheet()->getStyle('A'.$column.':E'.$column)
+        $spreadsheet->getActiveSheet()->getStyle('A'.$column.':F'.$column)
                 ->getFill()->setFillType(\PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID)->getStartColor()->setARGB('FF000000');
-        $spreadsheet->getActiveSheet()->getStyle('A'.$column.':E'.$column)
+        $spreadsheet->getActiveSheet()->getStyle('A'.$column.':F'.$column)
                 ->getFont()->getColor()->setARGB(\PhpOffice\PhpSpreadsheet\Style\Color::COLOR_WHITE);
 
         $spreadsheet->getActiveSheet()->getColumnDimension('A')->setWidth(4);
         $spreadsheet->getActiveSheet()->getColumnDimension('B')->setWidth(4);
         $spreadsheet->getActiveSheet()->getColumnDimension('C')->setWidth(4);
         $spreadsheet->getActiveSheet()->getColumnDimension('D')->setWidth(4);
+        $spreadsheet->getActiveSheet()->getColumnDimension('E')->setWidth(4);
         $spreadsheet->getActiveSheet()->getColumnDimension($colIdx[($maxLevel -1)])->setAutoSize(true);
-        $spreadsheet->getActiveSheet()->getColumnDimension('E')->setAutoSize(true);
+        $spreadsheet->getActiveSheet()->getColumnDimension('F')->setAutoSize(true);
 
         // tulis dalam format .xlsx
         $writer = new Xlsx($spreadsheet);
@@ -228,17 +276,30 @@ class Bazzeting extends BaseController
 
     public function getRefBazzetingFungsional($kdkomp=null)
     {
+        $dtfung = [];
+
         $model = model(BazzetingModel::class);
         $data = $model->getRefBazzetingFungsional($kdkomp);
-
-        //$data = json_decode(json_encode($data), true);
-
-        $dtfung = [];
         foreach ($data as $key => $value) {
             $kunker = $value->kunker;
             $dtfung[$kunker][] = $value;
         }
 
+        //$this->printData($dtfung);
+        return $dtfung;
+    }
+
+    public function getlsPNSfung($jenisjab, $kdkomp)
+    {
+        $dtfung = [];
+
+        $model = model(BazzetingModel::class);
+        $data = $model->getPNSfung(null, $jenisjab, $kdkomp);
+        foreach ($data as $key => $value) {
+            $kunker = $value->kunker;
+            $kjabfung = $value->kjab;
+            $dtfung[$kunker][$kjabfung][] = $value;
+        }
         //$this->printData($dtfung);
         return $dtfung;
     }
@@ -254,23 +315,39 @@ class Bazzeting extends BaseController
         //$this->printData($data);
         foreach ($data1 as $key => $value) {
             $kjabfung = $value->kjabfung;
-            $dt[$kjabfung]['kjab'] = $kjabfung;
-            $dt[$kjabfung]['njab'] = $value->jabfung;
-            $dt[$kjabfung]['jml'] = $value->jml;
+            if(!isset($dt[$kjabfung])){
+                $dt[$kjabfung]['kjab'] = $kjabfung;
+                $dt[$kjabfung]['njab'] = $value->jabfung;
+                $dt[$kjabfung]['jenisjab'] = $value->jenisjab;
+                $dt[$kjabfung]['jml'] = $value->jml;    
+            }else{
+                //$dt[$kjabfung]['kjab'] = $kjabfung;
+                //$dt[$kjabfung]['njab'] = $value->jabfung;
+                $dt[$kjabfung]['jml'] = $dt[$kjabfung]['jml'] + $value->jml;
+            }
         }
 
-        
-
-        $data = $model->getJabfung($kdkomp);
-        foreach ($data as $key => $value) {
+        $data_a = $model->getJabfung($kdkomp, 2);
+        $data_b = $model->getJabfung($kdkomp, 4);
+        foreach ($data_a as $key => $value) {
             $kjab = $value->kjab;
             $lsjab[] = $kjab;
-            //$dtfung[$kjab]['kjab'] = $value->kjab;
-            //$dtfung[$kjab]['njab'] = $value->njab;
-            //$dtfung[$kjab]['formasi'] = $value->jml;
             $dtfung[] = [
                 'kjab' => $kjab,
                 'njab' => $value->njab,
+                'jenisjab' => 2,
+                'ada' => $value->jml,
+                'butuh' => isset($dt[$kjab]) ? $dt[$kjab]['jml'] : 0,
+            ];
+        }
+
+        foreach ($data_b as $key => $value) {
+            $kjab = $value->kjab;
+            $lsjab[] = $kjab;
+            $dtfung[] = [
+                'kjab' => $kjab,
+                'njab' => $value->njab,
+                'jenisjab' => 4,
                 'ada' => $value->jml,
                 'butuh' => isset($dt[$kjab]) ? $dt[$kjab]['jml'] : 0,
             ];
@@ -282,12 +359,14 @@ class Bazzeting extends BaseController
                 $dtfung[] = [
                     'kjab' => $kjabfung,
                     'njab' => $value->jabfung,
+                    'jenisjab' => $value->jenisjab,
                     'ada' => 0,
                     'butuh' => $value->jml,
                 ];
             }
         }
-        //$this->printData($lsjab);
+
+        //$this->printData($dtfung);
         return $dtfung;
     }
 
@@ -295,6 +374,7 @@ class Bazzeting extends BaseController
     {
         $data['kunker'] = $this->request->getPost('idx_opd');
         $data['kkomp'] = substr($data['kunker'], 0,4);
+        $data['jenisjab'] = $this->request->getPost('jenisjab');
         $data['kjabfung'] = $this->request->getPost('kjabfung');
         $data['jabfung'] = $this->request->getPost('jabfung');
         $data['jml'] = $this->request->getPost('jml');

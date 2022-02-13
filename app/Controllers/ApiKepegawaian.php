@@ -21,7 +21,11 @@ class ApiKepegawaian extends BaseController
         if($nip != '' && strlen($nip) == 18){
             $result = $model->getPNS($nip);
             if($result){
-                return $this->respond($result);
+                $ns = [
+                    'status'    => 200,
+                    'data'      => $result,
+                ];
+                return $this->respond($ns);
             }else{
                 return $this->failNotFound('No Data Found ');
             }
@@ -37,7 +41,31 @@ class ApiKepegawaian extends BaseController
         if($kdkomp != '' && strlen($kdkomp) == 4){
             $result = $model->getOPD($kdkomp);
             if($result){
-                return $this->respond($result);
+                $ns = [
+                    'status'    => 200,
+                    'data'      => $result,
+                ];
+                return $this->respond($ns);
+            }else{
+                return $this->failNotFound('No Data Found');
+            }
+        }else{
+            return $this->failNotFound('No Data Found');
+        }
+        
+    }
+
+    public function unker($kunker)
+    {
+        $model = model(BazzetingModel::class);
+        if($kunker != '' && strlen($kunker) == 10){
+            $result = $model->getUnker($kunker);
+            if($result){
+                $ns = [
+                    'status'    => 200,
+                    'data'      => $result,
+                ];
+                return $this->respond($ns);
             }else{
                 return $this->failNotFound('No Data Found');
             }

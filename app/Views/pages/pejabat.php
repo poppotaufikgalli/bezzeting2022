@@ -28,9 +28,18 @@
                             <div class="card shadow mb-4">
                                 <div class="card-body">
                                     <div class="row mb-2">
+                                        <label class="form-control-label col-2">Jenis Fungsional</label>
+                                        <div class="col-10">
+                                            <select class="form-control" id="jenisjab" name="jenisjab">
+                                                <option value="2" <?=$jenisjab == 2 ? "selected" : ""?>>Fungsional Tertentu</option>
+                                                <option value="4" <?=$jenisjab == 4 ? "selected" : ""?>>Fungsional Umum</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
                                         <label class="form-control-label col-2">Jabatan Fungsional</label>
                                         <div class="col-10">
-                                            <input type="search" class="form-control" value="<?=isset($seljabfung)? $seljabfung : "" ?>" id="jabfung" name="jabfung" list="lsjabfung">
+                                            <input type="search" class="form-control" value="<?=isset($seljabfung)? $seljabfung : "" ?>" id="jabfung" name="jabfung" list="lsjabfung2">
                                         </div>
                                     </div>
                                 </div>
@@ -44,7 +53,7 @@
                                 <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary"><?=$seljabfung?></h6>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body small">
                                     <table class="table table-hover table-sm table-bordered">
                                         <thead class="table-dark text-center">
                                             <tr>
@@ -112,10 +121,19 @@
     </div>
     <!-- End of Page Wrapper -->
 
-    <datalist id="lsjabfung">
+    <datalist id="lsjabfung2">
         <?Php 
-            if(isset($lsjabfung) && count($lsjabfung)> 0){
-                foreach ($lsjabfung as $key => $value) {
+            if(isset($lsjabfung['tertentu']) && count($lsjabfung['tertentu'])> 0){
+                foreach ($lsjabfung['tertentu'] as $key => $value) {
+                    echo "<option data-idx='$value->kjab' value='$value->njab'>"; 
+                }
+            }
+        ?>
+    </datalist>
+    <datalist id="lsjabfung4">
+        <?Php 
+            if(isset($lsjabfung['umum']) && count($lsjabfung['umum'])> 0){
+                foreach ($lsjabfung['umum'] as $key => $value) {
                     echo "<option data-idx='$value->kjab' value='$value->njab'>"; 
                 }
             }
@@ -130,21 +148,34 @@
 <script type="text/javascript">
     $(document).ready(function(){
         var kjab = '<?=$selkjab?>';
-        $("#lsjabfung").find("option").each(function() {
+        var jenisjab = '<?=$jenisjab?>';
+        var njenisjab = $("#jenisjab option:selected").text();
+        $("#lsjabfung"+jenisjab).find("option").each(function() {
             if ($(this).data('idx') == kjab) {
                 var njab = $(this).val();
                 $("#jabfung").val(njab)
-                $("#titlejabfung").html(njab)
+                $("#titlejabfung").html(njenisjab + " - " + njab)
             }
-        })
+        });
+        $("#jabfung").attr('list', "lsjabfung"+jenisjab)
+    });
+
+    $("#jenisjab").on('change', function(){
+        var val = $(this).val()
+        $("#jabfung").val("");
+        $("#jabfung").attr('list', 'lsjabfung'+val);
     });
 
     $("#jabfung").on('input', function(){
         var userText = this.value;
-        $("#lsjabfung").find("option").each(function() {
+        var jenisjab = $("#jenisjab").val()
+        $("#lsjabfung"+jenisjab).find("option").each(function() {
             if ($(this).val() == userText) {
                 var idx = $(this).data('idx');
-                window.location.href = "<?=base_url('pejabat')?>/"+idx;
+                console.log(idx)
+                if(idx != ""){
+                    window.location.href = "<?=base_url('pejabat')?>/"+idx+"/"+jenisjab;    
+                }
             }
         })
     })

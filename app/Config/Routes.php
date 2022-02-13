@@ -40,6 +40,7 @@ $routes->get('/formasi/(:num)', 'Bazzeting::formasi/$1',['filter' => 'auth']);
 $routes->get('/pejabat', 'Bazzeting::pejabat',['filter' => 'auth']);
 $routes->get('/pejabat/(:num)', 'Bazzeting::pejabat/$1',['filter' => 'auth']);
 $routes->get('/pejabat/(:num)/(:num)', 'Bazzeting::pejabat/$1/$2',['filter' => 'auth']);
+$routes->get('/pejabat/(:num)/(:num)/(:num)', 'Bazzeting::pejabat/$1/$2/$3',['filter' => 'auth']);
 $routes->get('/laporan', 'Bazzeting::laporan',['filter' => 'auth']);
 $routes->get('/downloadExcel/', 'Bazzeting::downloadExcel',['filter' => 'auth']);
 $routes->get('/downloadExcel/(:num)', 'Bazzeting::downloadExcel/$1',['filter' => 'auth']);
@@ -56,7 +57,8 @@ $routes->group('hapus', function ($routes) {
 
 $routes->group('api', function ($routes) {
     $routes->get('pegawai/(:num)', 'ApiKepegawaian::lspegawai/$1');
-    $routes->get('unker/(:num)', 'ApiKepegawaian::lsunker/$1');
+    $routes->get('unker/(:num)', 'ApiKepegawaian::unker/$1');
+    $routes->get('lsunker/(:num)', 'ApiKepegawaian::lsunker/$1');
 });
 
 /*

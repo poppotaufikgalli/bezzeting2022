@@ -39,10 +39,16 @@
                         <?Php 
                             if(isset($selopd) && count($selopd) >0){
                         ?>
-                        <div class="col-lg-8 mb-12">
+                        <div class="col-lg-9 mb-12">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary"><?=$selnunker?></h6>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="m-0 font-weight-bold text-primary"><?=$selnunker?></h6>
+                                        <h6 class="m-0 font-weight-bold text-primary align-self-center">
+                                            <input type="checkbox" id="ynama" name="ynama" checked>
+                                            <label for="ynama" class="mb-0">Tampil Nama</label>
+                                        </h6>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <table class="table table-hover table-sm table-bordered">
@@ -77,16 +83,35 @@
                                                     if(isset($selRefBazFung[$kunker]) && count($selRefBazFung[$kunker]) > 0){
                                                         $BazFung = $selRefBazFung[$kunker];    
                                                         //$offset = (20* ($value->levelunker+1)) . "px";
+                                                        //echo "<tr><td>&nbsp;</td><td>&nbsp;</td><th class='bg-gray-300' style='padding-left: $offset;'>Fungsional Tertentu</th><td>&nbsp;</td></tr>";
                                                         foreach ($BazFung as $key => $value) {
                                                             echo "<tr>";
                                                             echo "<td>&nbsp;</td>";
                                                             echo "<td class='text-center'><button class='btn btn-sm btn-circle btn-danger' onclick='hapus(`$value->kunker`, `$value->kjabfung`)'>x</button></td>";
                                                             echo "<td style='padding-left: $offset;'>&#8627;&nbsp;";
                                                             echo "<i>$value->jabfung</i>";
+                                                            echo $value->jenisjab == 2 ? " (JFT)" : " (JFU)";
                                                             echo "</td>";
                                                             echo "<td class='text-center'>$value->jml</td>";
                                                             echo "</tr>";
                                                             $jmlfung = $jmlfung + $value->jml;
+                                                            //list orang
+                                                            $idxfung = $value->jenisjab == 2 ? "tertentu" : "umum";
+                                                            $kjabfung = $value->kjabfung;
+
+                                                            if(isset($lspnsfung[$idxfung][$kunker][$kjabfung]) && count($lspnsfung[$idxfung][$kunker][$kjabfung])> 0){
+                                                                echo "<tr class='trNama'>";
+                                                                echo "<td>&nbsp;</td>";
+                                                                echo "<td>&nbsp;</td>";
+                                                                echo "<td style='padding-left: $offset; padding-bottom: 1px'>";
+                                                                $dtlspnsfung = $lspnsfung[$idxfung][$kunker][$kjabfung];
+                                                                foreach ($dtlspnsfung as $key1 => $value1) {
+                                                                    echo "✅ ".$value1->nama." (".$value1->ngolru.")<br>";
+                                                                }
+                                                                echo "</td>";
+                                                                echo "<td></td>";
+                                                                echo "</tr>";
+                                                            }
                                                         }    
                                                     }
                                                 }
@@ -102,13 +127,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 mb-12">
+                        <div class="col-lg-3 mb-12">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary">Jabatan Fungsional</h6>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body small">
                                     <div class="row mb-2">
+                                        <b class="mb-2">Fungsional Tertentu</b>
                                         <table class="table table-hover table-sm table-bordered">
                                             <thead class="table-dark text-center">
                                                 <tr>
@@ -124,35 +150,104 @@
                                                     $jml2 = 0;
                                                     if(isset($sellspns) && count($sellspns) > 0){
                                                         foreach ($sellspns as $key => $value) {
-                                                            $kjab = $value['kjab'];
-                                                            $njab = $value['njab'];
-                                                            $butuh = $value['butuh'];
-                                                            $ada = $value['ada'];
-                                                            $kurang = $butuh - $ada;
+                                                            if($value['jenisjab'] == 2){
+                                                                $kjab = $value['kjab'];
+                                                                $njab = $value['njab'];
+                                                                $jenisjab = $value['jenisjab'];
+                                                                $butuh = $value['butuh'];
+                                                                $ada = $value['ada'];
+                                                                $kurang = $butuh - $ada;
 
-                                                            if($kurang < 0){
-                                                                echo "<tr class='text-danger'>";
-                                                            }else{
-                                                                echo "<tr>";
-                                                            }
+                                                                if($kurang < 0){
+                                                                    echo "<tr class='text-danger'>";
+                                                                }else{
+                                                                    echo "<tr>";
+                                                                }
 
-                                                            echo "<td>$njab</td>";
-                                                            echo "<td class='text-center'>$butuh</td>";
-                                                            echo "<td class='text-center'>";
-                                                            if($ada > 0){
-                                                                echo "<u><a href='".base_url('pejabat')."/$kjab/$selkdkomp'>$ada</a></u>";    
-                                                            }else{
-                                                                echo $ada;
+                                                                echo "<td>$njab</td>";
+                                                                echo "<td class='text-center'>$butuh</td>";
+                                                                echo "<td class='text-center'>";
+                                                                if($ada > 0){
+                                                                    echo "<u><a href='".base_url('pejabat')."/$kjab/$jenisjab/$selkdkomp'>$ada</a></u>";    
+                                                                }else{
+                                                                    echo $ada;
+                                                                }
+                                                                echo "</td>";
+                                                                $jml1 = $jml1 + $butuh;
+                                                                $jml2 = $jml2 + $ada;
+                                                                if($kurang < 0){
+                                                                    echo "<td class='text-center'>($kurang)</td>";
+                                                                }else{
+                                                                    echo "<td class='text-center'>$kurang</td>";
+                                                                }
+                                                                echo "</tr>";
                                                             }
-                                                            echo "</td>";
-                                                            $jml1 = $jml1 + $butuh;
-                                                            $jml2 = $jml2 + $ada;
-                                                            if($kurang < 0){
-                                                                echo "<td class='text-center'>($kurang)</td>";
-                                                            }else{
-                                                                echo "<td class='text-center'>$kurang</td>";
+                                                        }    
+                                                    }
+                                                    
+                                                    //if(isset($selBazFung[]))
+                                                ?>
+                                            </tbody>
+                                            <tfoot class="table-dark text-center">
+                                                <tr>
+                                                    <th>Jumlah</th>
+                                                    <th><?=$jml1?></th>
+                                                    <th><?=$jml2?></th>
+                                                    <th>&nbsp;</th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+
+                                    <div class="row mb-2">
+                                        <b class="mb-2">Fungsional Umum</b>
+                                        <table class="table table-hover table-sm table-bordered">
+                                            <thead class="table-dark text-center">
+                                                <tr>
+                                                    <th>Struktur / Jabatan</th>
+                                                    <th width="15%">Butuh</th>
+                                                    <th width="15%">Ada</th>
+                                                    <th width="15%">Kurang</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php 
+                                                    $jml1 = 0;
+                                                    $jml2 = 0;
+                                                    if(isset($sellspns) && count($sellspns) > 0){
+                                                        foreach ($sellspns as $key => $value) {
+                                                            if($value['jenisjab'] == 4){
+                                                                $kjab = $value['kjab'];
+                                                                $njab = $value['njab'];
+                                                                $jenisjab = $value['jenisjab'];
+                                                                $butuh = $value['butuh'];
+                                                                $ada = $value['ada'];
+                                                                $kurang = $butuh - $ada;
+
+                                                                if($kurang < 0){
+                                                                    echo "<tr class='text-danger'>";
+                                                                }else{
+                                                                    echo "<tr>";
+                                                                }
+
+                                                                echo "<td>$njab</td>";
+                                                                echo "<td class='text-center'>$butuh</td>";
+                                                                echo "<td class='text-center'>";
+                                                                if($ada > 0){
+                                                                    echo "<u><a href='".base_url('pejabat')."/$kjab/$jenisjab/$selkdkomp'>$ada</a></u>";    
+                                                                }else{
+                                                                    echo $ada;
+                                                                }
+                                                                echo "</td>";
+                                                                $jml1 = $jml1 + $butuh;
+                                                                $jml2 = $jml2 + $ada;
+                                                                if($kurang < 0){
+                                                                    echo "<td class='text-center'>($kurang)</td>";
+                                                                }else{
+                                                                    echo "<td class='text-center'>$kurang</td>";
+                                                                }
+                                                                echo "</tr>";
                                                             }
-                                                            echo "</tr>";
                                                         }    
                                                     }
                                                     
@@ -199,8 +294,15 @@
                             <div class="modal-body">
                                 <div class="form-row">
                                     <div class="form-group col-md-9">
+                                        <label for="jenisjab">Jenis Fungsional</label>
+                                        <select class="form-control" id="jenisjab" name="jenisjab">
+                                            <option value="2">Fungsional Tertentu</option>
+                                            <option value="4">Fungsional Umum</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-9">
                                         <label for="jabfung">Jabatan Fungsional</label>
-                                        <input type="text" class="form-control" id="jabfung" name="jabfung" list="lsjabfung" required>
+                                        <input type="text" class="form-control" id="jabfung" name="jabfung" list="lsjabfung2" required>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label for="jml">Jumlah Formasi</label>
@@ -233,10 +335,19 @@
             ?>
         </datalist>
 
-        <datalist id="lsjabfung">
+        <datalist id="lsjabfung2">
             <?Php 
-                if(isset($lsjabfung) && count($lsjabfung)> 0){
-                    foreach ($lsjabfung as $key => $value) {
+                if(isset($lsjabfung['tertentu']) && count($lsjabfung['tertentu'])> 0){
+                    foreach ($lsjabfung['tertentu'] as $key => $value) {
+                        echo "<option data-idx='$value->kjab' value='$value->njab'>"; 
+                    }
+                }
+            ?>
+        </datalist>
+        <datalist id="lsjabfung4">
+            <?Php 
+                if(isset($lsjabfung['umum']) && count($lsjabfung['umum'])> 0){
+                    foreach ($lsjabfung['umum'] as $key => $value) {
                         echo "<option data-idx='$value->kjab' value='$value->njab'>"; 
                     }
                 }
@@ -261,11 +372,19 @@
                 window.location.href = "<?=base_url('formasi')?>/"+idx;
             }
         })
-    })
+    });
+
+    $("#jenisjab").on('change', function(){
+        var val = $(this).val()
+        $("#jabfung").val("");
+        $("#kjabfung").val("");
+        $("#jabfung").attr('list', 'lsjabfung'+val);
+    });
 
     $("#jabfung").on('input', function(){
         var userText = this.value;
-        $("#lsjabfung").find("option").each(function() {
+        var jenisjab = $("#jenisjab").val()
+        $("#lsjabfung"+jenisjab).find("option").each(function() {
             if ($(this).val() == userText) {
                 var idx = $(this).data('idx');
                 $("#kjabfung").val(idx)
@@ -293,6 +412,14 @@
             window.location.href = "<?=base_url('hapus/fungsional/')?>/"+kunker+"/"+kjabfung;
         }
     }
+
+    $("#ynama").on('change', function(){
+        if ($(this).prop("checked")) {
+            $(".trNama").removeClass('d-none');
+        }else{
+            $(".trNama").removeClass('d-none').addClass('d-none')
+        }
+    });
 
     (function() {
       'use strict';

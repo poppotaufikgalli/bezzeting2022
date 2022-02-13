@@ -36,8 +36,8 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Formasi Fungsional</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?=$rekap['jmlformasi']?></div>
+                                                Formasi Fungsional Tertentu</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?=$rekap['jmlformasiFT']?></div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-sitemap fa-2x text-gray-300"></i>
@@ -49,13 +49,47 @@
 
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Pejabat Fungsional Tertentu</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?=$rekap['jmlpnsFT']?></div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-user-tie fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Pejabat Fungsional</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?=$rekap['jmlpns']?></div>
+                                                Formasi Fungsional Umum</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?=$rekap['jmlformasiFU']?></div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-sitemap fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Pejabat Fungsional Umum</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?=$rekap['jmlpnsFU']?></div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-user-tie fa-2x text-gray-300"></i>
@@ -108,10 +142,32 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Kurang/Lebih</div>
+                                                Kurang/Lebih JFT</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                 <?php
-                                                    $n = $rekap['jmlformasi'] - $rekap['jmlpns'];
+                                                    $n = $rekap['jmlformasiFT'] - $rekap['jmlpnsFT'];
+                                                    echo $n;
+                                                ?>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-star-half-alt fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                Kurang/Lebih JFU</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                <?php
+                                                    $n = $rekap['jmlformasiFU'] - $rekap['jmlpnsFU'];
                                                     echo $n;
                                                 ?>
                                             </div>
